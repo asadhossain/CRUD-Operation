@@ -30,7 +30,9 @@
 
             $query = "INSERT INTO students(std_name, std_roll, std_img) VALUE ('$std_name',$std_roll, '$std_img')";
 
-            if(mysqli_query())
+            if(mysqli_query($this->conn, $query)){
+                return"Information Added Successfully";
+            }
 
 
         }
