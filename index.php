@@ -11,7 +11,8 @@
     <title>CRUD Operation!</title>
   </head>
   <body>
-    
+
+        <!-- Main Boostrap Form Codes Files -->
 <div class="container my-4 p-4 shadow">
  <h2><a style="text-decoration: none; color:green;" href="index.php">ASAD'S Student Datebase</a></h2>
       <form class="form" action="" method="post" enctype="multipart/form-data">
@@ -30,6 +31,34 @@
 </div>
 
 
+
+
+<div class="container my-4 p-4 shadow">
+
+    <table class= "table table-responsive">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Student Roll</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Asad</td>
+                <td>234</td>
+                <td><a class= "btn btn-success" href="#">Edit</a></td>
+                <td><a class= "btn btn-warning" href="#">Delete</a></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+
+</div>
 
 
 
