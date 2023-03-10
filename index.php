@@ -1,6 +1,5 @@
 <?php
-include("function.php")
-
+include("function.php");
 $objCrudAdmin = new crudApp();
 
 

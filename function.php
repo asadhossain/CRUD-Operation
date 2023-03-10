@@ -11,11 +11,11 @@
             $dbpass = "";
             $dbname = 'crud_operation';
 
-            $this->conn= mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+            $this->conn= mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 
             if(!$this->conn)
             {
-                die ("database error!!");
+                die ("Database Connection Error!!");
             }
 
         }
