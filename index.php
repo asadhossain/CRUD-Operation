@@ -13,14 +13,15 @@
   <body>
     
 <div class="container my-4 p-4 shadow">
- <h2><a href="index.php">ASAD'S Student Datebase</a></h2>
+ <h2><a style="text-decoration: none; color:green;" href="index.php">ASAD'S Student Datebase</a></h2>
       <form class="form" action="" method="post" enctype="multipart/form-data">
 
          <input class="form-control mb-2" type="text" name="std-name" class placeholder="Enter Your Name">
          <input class="form-control mb-2" type="number" name="std-roll" class placeholder="Enter Your Roll">
          <label class=" mb-2" for="image"> Upload Your Image </label>
 
-         <input class="form-control mb-2" type="file" name="std-image">
+         <input  class="form-control mb-2 "type="file" name="std-image">
+         <input class="form-control mb-2 bg-info" type="submit" value="Add Information" name="submit" >
 
                   
          </form>
