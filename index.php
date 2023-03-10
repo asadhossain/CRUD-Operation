@@ -3,6 +3,12 @@ include("function.php");
 $objCrudAdmin = new crudApp();
 
 
+if (isset($_POST['submit_btn'])){
+    $objCrudAdmin->add_data($_POST);
+}
+
+
+
 ?>
 
 
@@ -25,12 +31,12 @@ $objCrudAdmin = new crudApp();
  <h2><a style="text-decoration: none; color:green;" href="index.php">ASAD'S Student Datebase</a></h2>
       <form class="form" action="" method="post" enctype="multipart/form-data">
 
-         <input class="form-control mb-2" type="text" name="std-name" class placeholder="Enter Your Name">
-         <input class="form-control mb-2" type="number" name="std-roll" class placeholder="Enter Your Roll">
+         <input class="form-control mb-2" type="text" name="std_name" class placeholder="Enter Your Name">
+         <input class="form-control mb-2" type="number" name="std_roll" class placeholder="Enter Your Roll">
          <label class=" mb-2" for="image"> Upload Your Image </label>
 
-         <input  class="form-control mb-2 "type="file" name="std-image">
-         <input class="form-control mb-2 bg-info" type="submit" value="Add Information" name="submit" >
+         <input  class="form-control mb-2 "type="file" name="std_img">
+         <input class="form-control mb-2 bg-info" type="submit" value="Add Information" name="submit_btn" >
 
                   
          </form>
