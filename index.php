@@ -31,7 +31,6 @@ if (isset($_POST['submit_btn'])){
  <h2><a style="text-decoration: none; color:green;" href="index.php">ASAD'S Student Datebase</a></h2>
       <form class="form" action="" method="post" enctype="multipart/form-data">
 
-      <?php   if(isset())  ?>
 
          <input class="form-control mb-2" type="text" name="std_name" class placeholder="Enter Your Name">
          <input class="form-control mb-2" type="number" name="std_roll" class placeholder="Enter Your Roll">
