@@ -1,6 +1,6 @@
  <?php
 include("function.php");
-$objCrudAdmin = new crudApp();
+$objCrudAdmin =  ();
 
 
 if (isset($_POST['submit_btn'])){
@@ -9,7 +9,7 @@ if (isset($_POST['submit_btn'])){
 
 
 
-?>
+?> 
 
 
 <!doctype html>

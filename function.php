@@ -25,7 +25,7 @@
             $std_name = $data["std_name"];
             $std_roll = $data["std_roll"];
             $std_img = $_FILES ["std_img"] ['name'];
-            $tmp_name = $_FILES ['std_img'] ['tmp_name']
+            $tmp_name = $_FILES ['std_img'] ['tmp_name'];
             $std_name = $data["std_name"];
 
             $query = "INSERT INTO students(std_name, std_roll, std_img) VALUE ('$std_name',$std_roll, '$std_img')";
