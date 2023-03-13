@@ -36,6 +36,11 @@
 
         }
 
+
+        public function display_data(){
+            
+        }
+
     }
 
 
