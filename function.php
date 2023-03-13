@@ -29,6 +29,7 @@
             $query = "INSERT INTO students(std_name, std_roll, std_img) VALUE ('$std_name',$std_roll, '$std_img')";
 
             if(mysqli_query($this->conn, $query)){
+                move_uploaded_file($tmp_name, "upload/".$std_img);
                 return"Information Added Successfully";
             }
 
