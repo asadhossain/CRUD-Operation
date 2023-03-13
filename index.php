@@ -1,15 +1,3 @@
-<?php
-include("function.php");
-$objCrudAdmin = new crudApp();
-
-
-if (isset($_POST['submit_btn'])){
-    $return_mgs = $objCrudAdmin->add_data($_POST);
-}
-
-
-
-?>
 
 
 <!doctype html>
