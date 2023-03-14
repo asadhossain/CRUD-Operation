@@ -64,15 +64,13 @@ $students = $objCrudAdmin->display_data();
             </tr>
         </thead>
         <tbody>
-            <?php while ($students= mysqli_fetch_assoc($students)){
-
-                           ?>
+            <?php while ($students= mysqli_fetch_assoc($students)){?>
             <tr>
-                <td>1</td>
-                <td>Asad</td>
-                <td>234</td>
-                <td><a class= "btn btn-success" href="#">Edit</a></td>
-                <td><a class= "btn btn-warning" href="#">Delete</a></td>
+                <td><?php echo $students['id']   ?></td>
+                <td><?php echo $students['std_name']   ?></td>
+                <td><?php echo $students['std_roll']   ?></td>
+                <td></td>
+                <td><a class= "btn btn-success" href="#">Edit</a><a class= "btn btn-warning" href="#">Delete</a></td>
             </tr>
             <?php }   ?>
         </tbody>
