@@ -73,7 +73,8 @@ $students = $objCrudAdmin->display_data();
                 <td>
                     <a class= "btn btn-success " href="#">Edit</a>
                     <a class= "btn btn-warning" href="#">Delete</a>
-           
+                </td>
+             </tr>
            <?php } ?>
         </tbody>
 
