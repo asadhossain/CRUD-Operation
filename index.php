@@ -64,7 +64,7 @@ $students = $objCrudAdmin->display_data();
             </tr>
         </thead>
         <tbody>
-            <?php while ($student=mysqli_fetch_assoc($students)) { ?>
+            <?php while ($student=mysqli_fetch_assoc($students)){?>
             <tr>
                 <td><?php echo $students['id']   ?></td>
                 <td><?php echo $students['std_name']   ?></td>
@@ -75,7 +75,7 @@ $students = $objCrudAdmin->display_data();
                     <a class= "btn btn-warning" href="#">Delete</a>
                 </td>
              </tr>
-           <?php  } ?>
+           <?php}?>
         </tbody>
 
     </table>
