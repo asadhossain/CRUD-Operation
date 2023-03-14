@@ -38,6 +38,11 @@
 
 
         public function display_data(){
+            $query = "SELECT * FROM students"
+            if(mysqli_query($this->conn, $query)){
+                $returndata = mysqli_query($this->conn, $query);
+                return $returndata;
+            }
             
         }
 
