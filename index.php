@@ -8,6 +8,8 @@ if (isset($_POST['submit_btn'])){
 }
 
 
+$students = $objCrudAdmin->display_data();
+
 
 ?>
 
@@ -62,6 +64,9 @@ if (isset($_POST['submit_btn'])){
             </tr>
         </thead>
         <tbody>
+            <?php while ($students= mysqli_fetch_assoc($students)){
+
+                           ?>
             <tr>
                 <td>1</td>
                 <td>Asad</td>
@@ -69,6 +74,7 @@ if (isset($_POST['submit_btn'])){
                 <td><a class= "btn btn-success" href="#">Edit</a></td>
                 <td><a class= "btn btn-warning" href="#">Delete</a></td>
             </tr>
+            <?php }   ?>
         </tbody>
 
     </table>
